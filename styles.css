@@ -45,3 +45,21 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/** Main Container */
+
+.content_container {
+  border: 1px solid #2d2d2d;
+  margin: 3rem;
+  padding: 1rem;
+  min-width: 600px;
+  max-width: 900px;
+}
+
+/** Header */
+
+.header_inner {
+  border: 1px solid #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+}
