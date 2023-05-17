@@ -47,13 +47,17 @@ h6 {
   isolation: isolate;
 }
 
+.hidden {
+  display: none;
+}
+
 /** Main Container */
 
 .content_container {
   margin: 1.5rem 1.5rem;
   padding: 1rem;
   min-width: 500px;
-  max-width: 550px;
+  max-width: 600px;
   background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
 }
 
@@ -76,7 +80,7 @@ h6 {
   background-image: url(assets/images/dog-teddy.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -85,6 +89,14 @@ h6 {
 .main_inner {
   margin-left: 1rem;
   margin-bottom: 1rem;
+}
+
+.badge_img {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  width: 30%;
+  transform: rotate(-35deg);
+  margin-bottom: auto;
 }
 
 .profile_photo {
@@ -97,7 +109,7 @@ h6 {
 }
 
 .dog_bio {
-  color: #ffffff;
+  color: #b7b7b7b7;
   font-weight: 400;
 }
 
@@ -120,4 +132,14 @@ h6 {
   border-radius: 100%;
   padding: 1rem;
   height: 4.5rem;
+}
+
+#icon-heart:hover {
+  background: #dbfff4;
+  box-shadow: 0px 10px 20px #ccf1e6;
+}
+
+#icon-cross:hover {
+  background-color: #ffe7ef;
+  box-shadow: 0px 10px 20px #edd9df;
 }
