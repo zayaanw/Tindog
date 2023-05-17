@@ -17,6 +17,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
 }
 img,
 picture,
@@ -49,11 +50,11 @@ h6 {
 /** Main Container */
 
 .content_container {
-  border: 1px solid #2d2d2d;
   margin: 1.5rem 1.5rem;
   padding: 1rem;
   min-width: 600px;
   max-width: 900px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
 }
 
 /** Header */
@@ -74,10 +75,20 @@ h6 {
   border-radius: 3%;
 }
 
+.dog_name {
+  color: black;
+  font-weight: 500;
+}
+
+.dog_bio {
+  color: black;
+  font-weight: 400;
+}
+
 /** Footer */
 
 .footer {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .footer_inner {
