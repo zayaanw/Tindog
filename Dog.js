@@ -3,17 +3,13 @@ class Dogs {
     Object.assign(this, data);
   }
   getDogHtml() {
-    const { name, avatar, age, bio, hasbeenSwiped, hasbeenLiked } = this;
-    return ` <h2 class="dog_name">${name}</h2>
+    let { name, avatar, age, bio, hasbeenSwiped, hasbeenLiked } = this;
+    this.hasbeenSwiped = true;
+    return ` <h2 class="dog_name">${name}, ${age}</h2>
     <p class="dog_bio">${bio}</p>`;
   }
   dogAvatar() {
     return `url(assets/${this.avatar}`;
-  }
-
-  doginfo() {
-    const { name, avatar } = this;
-    console.log(`testing ${name}`);
   }
 }
 

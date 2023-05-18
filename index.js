@@ -1,16 +1,24 @@
 import dogs from "./data.js";
 import Dog from "./Dog.js";
 
-const Rex = new Dog(dogs[0]);
-const Bella = new Dog(dogs[1]);
-const Teddy = new Dog(dogs[2]);
+function getnewDog() {
+  const nextDogData = dogs.shift();
+  return nextDogData ? new Dog(nextDogData) : {};
+}
 
-Rex.doginfo();
-Bella.doginfo();
-Teddy.doginfo();
+let dogProfile = getnewDog();
+
+console.log(dogProfile);
 
 document.querySelector("#icon-cross").addEventListener("click", () => {
-  document.querySelector(".main_inner").innerHTML = Bella.getDogHtml();
-  document.querySelector(".main_content").style.backgroundImage =
-    Bella.dogAvatar();
+  if (dogProfile.hasbeenSwiped) {
+    dogProfile = getnewDog();
+    document.querySelector(".main_inner").innerHTML = dogProfile.getDogHtml();
+    document.querySelector(".main_content").style.backgroundImage =
+      dogProfile.dogAvatar();
+  } else {
+    document.querySelector(".main_inner").innerHTML = dogProfile.getDogHtml();
+    document.querySelector(".main_content").style.backgroundImage =
+      dogProfile.dogAvatar();
+  }
 });

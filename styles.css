@@ -54,7 +54,7 @@ h6 {
 /** Main Container */
 
 .content_container {
-  margin: 1.5rem 1.5rem;
+  margin: 0 auto;
   padding: 1rem;
   min-width: 500px;
   max-width: 600px;
